@@ -1,0 +1,84 @@
+:root {
+    --orange: #FF9500;
+    --black: #1C1C1C;
+    --darkgray: #505050;
+    --lightgray: #D4D4D2;
+    --whitealtr: #F5F5DC;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--whitealtr);
+}
+
+.container {
+    background-color: var(--black);
+    width: fit-content;
+    padding: 30px;
+    border-radius: 40px;
+    margin: 0 auto;
+}
+
+div.elements {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-gap: 8px;
+}
+
+button {
+    font-size: 20px;
+    font-weight: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 auto;
+    cursor: pointer;
+    color: white !important;
+}
+
+#orange {
+    background-color: var(--orange);
+}
+
+#orange:active {
+    background-color: #ffb247;
+}
+
+#lightgray {
+    background-color: var(--lightgray);
+    color: var(--black) !important;
+}
+
+#lightgray:active {
+    background-color: #fbfbf7;
+}
+
+#number {
+    background-color: var(--darkgray);
+}
+
+#number:active {
+    background-color: #7a7a7a;
+}
+
+.display {
+    color: white;
+    padding: 20px 0px;
+    font-size: 20px;
+    font-weight: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.pre-result {
+    opacity: 0.5;
+}
+
+.result {
+    font-size: 50px;
+}
+
