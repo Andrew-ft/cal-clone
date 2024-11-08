@@ -3,34 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./Calculator.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+    <script src="./Calculator.js"></script>
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
 </head>
 <body>
     <div class="container">
-        <div class="display"></div>
+        <div class="display">
+            <div class="pre-result"></div>
+            <div class="result">0</div>
+        </div>
         <div class="elements">
-            <button>AC</button>
-            <button>+/-</button>
-            <button>%</button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>x</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button>CAL</button>
-            <button>0</button>
-            <button>=</button>
+            <button id="lightgray" onclick="clearDisplay('')">AC</button>
+            <button id="lightgray" onclick="appendToDisplay('')">+/-</button>
+            <button id="lightgray" onclick="appendToDisplay('')">%</button>
+            <button id="orange" onclick="appendToDisplay('')">/</button>
+            <button id="number" onclick="appendToDisplay('')">7</button>
+            <button id="number" onclick="appendToDisplay('')">8</button>
+            <button id="number" onclick="appendToDisplay('')">9</button>
+            <button id="orange" onclick="appendToDisplay('')">x</button>
+            <button id="number" onclick="appendToDisplay('')">4</button>
+            <button id="number" onclick="appendToDisplay('')">5</button>
+            <button id="number" onclick="appendToDisplay('')">6</button>
+            <button id="orange" onclick="appendToDisplay('')">-</button>
+            <button id="number" onclick="appendToDisplay('')">1</button>
+            <button id="number" onclick="appendToDisplay('')">2</button>
+            <button id="number" onclick="appendToDisplay('')">3</button>
+            <button id="orange" onclick="appendToDisplay('')">+</button>
+            <button id="number" onclick="calculate('')">CAL</button>
+            <button id="number" onclick="appendToDisplay('')">0</button>
+            <button id="number" onclick="appendToDisplay('')">.</button>
+            <button id="orange" onclick="appendToDisplay('')">=</button>
         </div>
     </div>
+    <script src="./jquery.min.js"></script>
 </body>
 </html>
