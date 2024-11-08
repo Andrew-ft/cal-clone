@@ -5,38 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="Calculator.css">
-    <script src="./Calculator.js"></script>
     <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
 </head>
 <body>
     <div class="container">
         <div class="display">
-            <div class="pre-result"></div>
-            <div class="result">0</div>
+            <div class="result"></div>
         </div>
         <div class="elements">
-            <button id="lightgray" onclick="clearDisplay('')">AC</button>
-            <button id="lightgray" onclick="appendToDisplay('')">+/-</button>
-            <button id="lightgray" onclick="appendToDisplay('')">%</button>
-            <button id="orange" onclick="appendToDisplay('')">/</button>
-            <button id="number" onclick="appendToDisplay('')">7</button>
-            <button id="number" onclick="appendToDisplay('')">8</button>
-            <button id="number" onclick="appendToDisplay('')">9</button>
-            <button id="orange" onclick="appendToDisplay('')">x</button>
-            <button id="number" onclick="appendToDisplay('')">4</button>
-            <button id="number" onclick="appendToDisplay('')">5</button>
-            <button id="number" onclick="appendToDisplay('')">6</button>
-            <button id="orange" onclick="appendToDisplay('')">-</button>
-            <button id="number" onclick="appendToDisplay('')">1</button>
-            <button id="number" onclick="appendToDisplay('')">2</button>
-            <button id="number" onclick="appendToDisplay('')">3</button>
-            <button id="orange" onclick="appendToDisplay('')">+</button>
-            <button id="number" onclick="calculate('')">CAL</button>
-            <button id="number" onclick="appendToDisplay('')">0</button>
-            <button id="number" onclick="appendToDisplay('')">.</button>
-            <button id="orange" onclick="appendToDisplay('')">=</button>
+            <button id="lightgray" onclick="clearDisplay()">AC</button>
+            <button id="lightgray" onclick="appendToDisplay('-')">+/-</button>
+            <button id="lightgray" onclick="appendToDisplay('%')">%</button>
+            <button id="orange" onclick="appendToDisplay('/')">/</button>
+            <button id="number" onclick="appendToDisplay('7')">7</button>
+            <button id="number" onclick="appendToDisplay('8')">8</button>
+            <button id="number" onclick="appendToDisplay('9')">9</button>
+            <button id="orange" onclick="appendToDisplay('*')">*</button>
+            <button id="number" onclick="appendToDisplay('4')">4</button>
+            <button id="number" onclick="appendToDisplay('5')">5</button>
+            <button id="number" onclick="appendToDisplay('6')">6</button>
+            <button id="orange" onclick="appendToDisplay('-')">-</button>
+            <button id="number" onclick="appendToDisplay('1')">1</button>
+            <button id="number" onclick="appendToDisplay('2')">2</button>
+            <button id="number" onclick="appendToDisplay('3')">3</button>
+            <button id="orange" onclick="appendToDisplay('+')">+</button>
+            <button id="number">CAL</button>
+            <button id="number" onclick="appendToDisplay('0')">0</button>
+            <button id="number" onclick="appendToDisplay('.')">.</button>
+            <button id="orange" onclick="calculate()">=</button>
         </div>
     </div>
     <script src="./jquery.min.js"></script>
+    <script src="./Calculator.js"></script>
 </body>
 </html>
